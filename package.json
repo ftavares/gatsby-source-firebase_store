@@ -1,0 +1,17 @@
+{
+  "name": "gatsby-source-openweathermap",
+  "description": "",
+  "author": "Fabio Tavares <fabio.martins.tavares@gmail.com>",
+  "repository": "https://github.com/ftavares/gatsby-source-openweathermap.git",
+  "keywords": [
+
+  ],
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "yarn build"
+  },
+  "dependencies": {
+    "firebase-admin": "^6.4.0"
+  },
+  "version": "1.0.4"
+}
