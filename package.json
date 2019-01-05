@@ -4,8 +4,13 @@
   "author": "Fabio Tavares <fabio.martins.tavares@gmail.com>",
   "repository": "https://github.com/ftavares/gatsby-source-firebase_store.git",
   "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "firebase_store"
+  ],
   "dependencies": {
     "firebase-admin": "^6.4.0"
   },
-  "version": "1.0.4"
+  "version": "1.0.5"
 }
