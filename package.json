@@ -1,16 +1,27 @@
 {
   "name": "gatsby-source-firebase_store",
-  "description": "",
+  "description": "A Gatsby source plugin to load resources from the firebase store.",
   "author": "Fabio Tavares <fabio.martins.tavares@gmail.com>",
   "repository": "https://github.com/ftavares/gatsby-source-firebase_store.git",
   "license": "MIT",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
+    "gatsby-source-firebase_store",
     "firebase_store"
   ],
   "dependencies": {
     "firebase-admin": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.2.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "prepublish": "yarn build"
   },
   "version": "1.0.7"
 }
