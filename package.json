@@ -23,5 +23,5 @@
     "build": "babel src --out-dir .",
     "prepublish": "yarn build"
   },
-  "version": "1.0.9"
+  "version": "1.0.14"
 }

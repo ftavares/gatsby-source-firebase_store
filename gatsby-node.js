@@ -1,6 +1,6 @@
-const crypto = require('crypto');
+const crypto = require("crypto");
 
-const admin = require('firebase-admin');
+const admin = require("firebase-admin");
 
 exports.sourceNodes = async ({
   actions: {
@@ -16,7 +16,7 @@ exports.sourceNodes = async ({
     timestampsInSnapshots: true
   });
   var db = admin.firestore();
-  paths.forEach(async path => {
+  const promises = paths.map(async path => {
     var docs = await db.collection(path).get();
     docs.forEach(doc => {
       createNode({
@@ -27,9 +27,11 @@ exports.sourceNodes = async ({
         internal: {
           type: path,
           content: JSON.stringify(doc.data()),
-          contentDigest: crypto.createHash('md5').update(JSON.stringify(doc.data())).digest('hex')
+          contentDigest: crypto.createHash("md5").update(JSON.stringify(doc.data())).digest("hex")
         }
       });
     });
   });
+  await Promise.all(promises);
+  return;
 };
