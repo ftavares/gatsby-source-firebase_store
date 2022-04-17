@@ -9,6 +9,11 @@ This source plugin for Gatsby will make Firebase Store information available in 
 yarn add gatsby-source-firebase_store
 ```
 
+```sh
+# Install the plugin yarn add gatsby-source-firebase_store yarn add gatsby-source-firebase_store yarn add gatsby-source-firebase_store yarn add gatsby-source-firebase_store
+
+```
+
 In `gatsby-config.js`:
 
 ```js
